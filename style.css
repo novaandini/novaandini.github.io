@@ -1,0 +1,261 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* akhir css reset */
+
+/* clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+   content: " "; /* 1 */
+   display: table; /* 2 */
+ }
+ 
+ .cf:after {
+   clear: both;
+ }
+ 
+ /**
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+ .cf {
+   zoom: 1;
+ }
+ /* akhir clearfix */
+
+
+
+
+
+
+body {
+    background-color: #e0fbfc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 20px;
+    background-color: #e0fbfc;
+}
+
+/* menu css */
+.header {
+    background-color: #e0fbfc;
+    height: 50px;
+    width: 620px;
+    border-radius: 30px;
+    margin-top: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .web-logo a{
+    font-size: 20px;
+}
+
+.header a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-list {
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.header-list:hover {
+    background-color: #fff;
+}
+
+.headerwrap {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* akhir menu css */
+
+/* main css */
+.main {
+    width: 100%;
+    margin: auto;
+}
+
+.aboutme {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme img {
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.aboutme p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    margin: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.explain p {
+    text-align: center;
+    margin: 20px;
+    width: 650px;
+    margin: auto;
+}
+
+.mainwrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    min-height: 550px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.list {
+    background-color: #c2dfe3;
+    width: 600px;
+    height: 300px;
+    border: 0px solid;
+    border-radius: 30px;  
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.list p {
+    margin: 15px;
+    font-size: 25px;
+    text-align: right;
+}
+
+.list img {
+    border-radius: 10px;
+    float: right;
+}
+
+
+/* footer */
+.footerwrap {
+    padding: 50px 200px;
+    background-color: #000;
+    color: #c2dfe3;
+}
+
+.footerwrap p {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    text-align: left;
+    line-height: 20px;
+}
+
+.footer1 {
+    width: 50%;
+}
+
+.footer1 h4, .footer2 p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer2 {
+    width: 12%;
+}
+
+.footer2 a {
+    color: #c2dfe3;
+    text-decoration: none;
+    line-height: 20px;
+}
